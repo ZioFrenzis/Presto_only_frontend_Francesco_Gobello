@@ -1,0 +1,83 @@
+/* font-family: 'DM Serif Display', serif;
+font-family: 'Merriweather', serif; */
+
+:root{
+    --platinum: #d8dbe2;
+    --bluchiaro: #A9BCD0;
+    --verde: #58a4b0;
+    --bluscuro: #373f51;
+    --black: #1b1b1e;
+}
+
+
+*{
+    font-family: 'Merriweather', serif; 
+    
+}
+
+body{
+    background-color: var(--platinum);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'DM Serif Display', serif;
+};
+
+.bplatinum{
+    background-color: var(--platinum) !important;
+}
+.bbluc{
+    background-color: var(--bluchiaro) !important;
+}
+.bblus{
+    background-color: var(--bluscuro) !important;
+}
+.bblack{
+    background-color: var(--black) !important;
+}
+.bverde{
+    background-color: var(--verde) !important;
+}
+.platinum{
+    color: var(--platinum) !important;
+}
+.bluc{
+    color: var(--bluchiaro) !important;
+}
+.blus{
+    color: var(--bluscuro) !important;
+}
+.black{
+    color: var(--black) !important;
+}
+.verde{
+    color: var(--verde) !important;
+}
+
+.logocustom{
+    height: 50px;
+    width: 60px;
+}
+
+.riempitivo{
+    width: 60px;
+}
+
+.navbar{
+    height: 170px;
+    transition: 0.6s;
+}
+
+ul{
+    transition: 0.6s;
+}
+
+.animazione{
+    transform: rotate(360deg)
+    
+}
+.animazione{
+    transition: 1s;
+    
+}
+

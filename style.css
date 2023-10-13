@@ -118,3 +118,77 @@ ul{
 .bordo{
     transition: 0.36s;
 }
+.cardAnnunci{
+    border: 1px solid var(--bluscuro) ;
+    border-radius: 25px;
+}
+.imgAnnunci{
+    border-radius: 25px 25px 0px 0px ;
+    border-bottom: 3px solid var(--verde);
+    padding-bottom: 2%;
+}
+.line{
+    border-radius: 25px 25px 0px 0px ;
+    border-bottom: 3px solid var(--verde);
+    padding-bottom: 1%;
+}
+.b-card{
+    background: rgb(216,219,226);
+    background: radial-gradient(circle, rgba(216,219,226,1) 17%, rgba(140,197,194,0.654131635564382) 100%);
+}
+
+
+
+#review{
+    position: relative;
+    height: 100%;
+}
+
+#review {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#review {
+    background: var(--platinum);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#review {
+    position: relative;
+    height: 100%;
+}
+
+#review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 240px;
+    height: 320px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide {
+    background-color: var(--verde);
+}
+

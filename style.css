@@ -192,3 +192,55 @@ ul{
     background-color: var(--verde);
 }
 
+.ann-header{
+    height: 50vh;
+    background-image:url(./media/img-sfondo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ann-card{
+
+    height: 250px;
+    
+    border: 2px solid var(--bluscuro);
+    background-color: var(--bluchiaro);
+    color: var(--w);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+.altro:hover{
+    color: var(--bluchiaro);
+    background-color: var(--bluscuro);
+    border: 2px solid var(--black);
+    border-radius: 25px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--black) !important;
+    background-color: var(--bluchiaro) !important;
+}
+.accordion-button {
+    color: var(--black) !important;
+    background-color: var(--bluchiaro) !important;
+}
+
+.accordion-item {
+    border: #A9BCD0;
+    background-color: #A9BCD0;
+    font-size: smaller;
+}
+
+.button:focus {
+    outline-color: transparent;
+
+}

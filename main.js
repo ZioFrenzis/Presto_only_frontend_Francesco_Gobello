@@ -4,18 +4,18 @@ let logo=document.querySelector('.logocustom');
 let ul=document.querySelector('.ul');
 let button=document.querySelector('.button');
 let imgSfondo=document.querySelector('.imgSfondo')
-let titolo=document.querySelector('.titolo')
-let bordo=document.querySelector('.bordo')
-let imgNum=document.querySelector('#imgNum')
-let fnum=document.querySelector('#fnum')
-let snum=document.querySelector('#snum')
-let tnum=document.querySelector('#tnum')
-let swiperWrapper=document.querySelector('.swiper-wrapper')
+let titolo=document.querySelector('.titolo');
+let bordo=document.querySelector('.bordo');
+let imgNum=document.querySelector('#imgNum');
+let fnum=document.querySelector('#fnum');
+let snum=document.querySelector('#snum');
+let tnum=document.querySelector('#tnum');
+let swiperWrapper=document.querySelector('.swiper-wrapper');
 
 
 navbar.style.height="170px";
-navbar.classList.remove("bverde")
-navbar.classList.add("bblack")
+navbar.classList.remove("bverde");
+navbar.classList.add("bblack");
 titolo.classList.add('black')
 link.forEach((el)=>{
     el.style.color='#d8dbe2'
@@ -121,6 +121,7 @@ let articoli=[
     {nome:"Risiko", categoria:"Giochi", prezzo:'45' },
     {nome:"Gamba di legno", categoria:"Garpez", prezzo:'60.000' },
     {nome:"Joystick", categoria:"Giochi", prezzo:'70' },
+    
 ]
 
 articoli.forEach((el,i)=>{
@@ -159,7 +160,7 @@ reviews.forEach( (review)=>{
     div.innerHTML= `
     <p class="text-center fs-3 mt-2">${review.name}</p>
                     <p class="text-center w3-medium ">${review.description}</p>
-                    <div class= "d-flex justify-content-center align-bottom mt-2>
+                    <div class= "d-flex justify-content-center  mt-2>
             ${createStar(review.vote)}
         </div>
         

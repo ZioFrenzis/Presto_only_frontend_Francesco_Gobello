@@ -33,7 +33,10 @@
                         <a class="nav-link link fs-4 " aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link link fs-4" href="">Link</a>
+                        <a class="nav-link link fs-4" href="./annunci.html">Annunci</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link link fs-4" href="./chisiamo.html">Chi siamo</a>
                     </li>
                     
                 </ul>
@@ -48,6 +51,7 @@
             <div class="col-10 col-md-8 margin ">
                 <img class="img-fluid imgSfondo w3-animate-opacity" src="./media/img-sfondo-scura.png" alt="" srcset="">
                 <h1 class="fs-1 mt-5 text-center d-flex justify-content-center w3-animate-left ">I NOSTRI ANNUNCI</h1>
+                <input type="text" class="form-control w3-animate-right" placeholder="Cosa stai cercando?" id="wordInput">
             </div>
         </div>
     </header>
@@ -55,13 +59,13 @@
     <!-- sezione annunci -->
     
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="col-12 col-md-3">
                 
                 <div class="accordion" id="accordionExample">
-                    <div class="accordion-item p-0">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed  fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="accordion-item p-0 rounded-5 w3-hover-shadow">
+                        <h2 class="accordion-header ">
+                            <button class="accordion-button collapsed rounded-5  fs-4 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Categoria
                             </button>
                         </h2>
@@ -69,7 +73,7 @@
                             <div id="radioWrapper" class="accordion-body">
                                 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="categories" id="All" checked>
+                                    <input class="form-check-input a" type="radio" name="categories" id="All" checked>
                                     <label class="form-check-label" for="All">
                                         Tutte le categorie
                                     </label>
@@ -78,9 +82,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed bbluc black fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="accordion-item rounded-5 w3-hover-shadow">
+                        <h2 class="accordion-header ">
+                            <button class="accordion-button rounded-5 collapsed bbluc black fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Prezzo
                             </button>
                         </h2>
@@ -94,22 +98,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item rounded-5 w3-hover-shadow">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed  fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Parola
+                            <button class="accordion-button rounded-5 collapsed  fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Ordina 
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                PAROLA
+                                
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ordinamento" id="menoFirst" checked>
+                                    <label class="form-check-label" for="menoFirst">
+                                        Dal meno caro al più caro
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ordinamento" id="menoLast" checked>
+                                    <label class="form-check-label" for="menoLast">
+                                        Dal più caro al meno caro
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ordinamento" id="alfabetico" checked>
+                                    <label class="form-check-label" for="alfabetico">
+                                        Dalla A alla Z
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div id="cardsWrapper" class="col-12 col-md-8 d-flex flex-wrap justify-content-evenly my-3">
+            <div id="cardsWrapper" class="col-12 col-md-9 d-flex flex-wrap justify-content-evenly my-3">
                 
             </div>
         </div>

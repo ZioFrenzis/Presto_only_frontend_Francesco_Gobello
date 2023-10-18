@@ -238,9 +238,43 @@ ul{
     border: #A9BCD0;
     background-color: #A9BCD0;
     font-size: smaller;
+    outline-color: transparent;
 }
 
-.button:focus {
-    outline-color: transparent;
+#circle{
+    height: 300px;
+    width: 300px;
+    border: 2px dashed var(--verde);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#opener{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--bluscuro);
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--verde);
+}
+
+.moved {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--verde);
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    background-color: var(--bluchiaro); 
+    z-index: 2;
+    background-size: contain;
+    background-position: center;
 
 }

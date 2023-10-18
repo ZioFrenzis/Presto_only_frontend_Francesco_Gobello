@@ -11,6 +11,10 @@ let fnum=document.querySelector('#fnum');
 let snum=document.querySelector('#snum');
 let tnum=document.querySelector('#tnum');
 let swiperWrapper=document.querySelector('.swiper-wrapper');
+let wordInput=document.querySelector('#wordInput');
+let menoFirst=document.querySelector('menoFirst')
+let menoLast=document.querySelector('menoLast')
+let alfabetico=document.querySelector('alfabetico')
 
 
 navbar.style.height="170px";
@@ -131,7 +135,7 @@ fetch('./annunci.json')
             let div = document.createElement('div');
             div.classList.add("form-check");
             div.innerHTML= `
-            <input class="form-check-input" type="radio" name="categories" id="${el}">
+            <input class="form-check-input a" type="radio" name="categories" id="${el}">
             <label class="form-check-label" for="${el}">
             ${el}
             </label>           
@@ -167,21 +171,21 @@ fetch('./annunci.json')
     
     
     
-    let radios = document.querySelectorAll('.form-check-input');
+    let radios = document.querySelectorAll('.a');
     // console.log(radios);
 
-    function filterByCategory() {
+    function filterByCategory(array) {
         
         let checked = Array.from(radios).find( (button)=> button.checked )
         let categoria = checked.id;
         
 
         if (categoria == 'All') {
-            showCards(data)
+            return array
         } else {
-            let filtered = data.filter( (annuncio)=> annuncio.category == categoria );
+            let filtered = array.filter( (annuncio)=> annuncio.category == categoria );
         ;
-        showCards(filtered)
+        return filtered
         }
 
         
@@ -189,7 +193,7 @@ fetch('./annunci.json')
 
         radios.forEach( (button)=>{
             button.addEventListener('click', ()=>{
-                filterByCategory();
+                globalFilter();
                 
             })
         })
@@ -208,12 +212,12 @@ fetch('./annunci.json')
 
         setInputPrice()
 
-        function filterByPrice() {
-            let filtered = data.filter( (annuncio)=>{
+        function filterByPrice(array) {
+            let filtered = array.filter( (annuncio)=>{
                 return Number(annuncio.price) <= Number(inputRange.value)});
 
                 // console.log(filtered);
-                showCards(filtered);
+                return filtered;
             }
             
             
@@ -223,7 +227,7 @@ fetch('./annunci.json')
 
         
         inputRange.addEventListener('input', ()=>{
-            filterByPrice();
+            globalFilter();
             numberPrice.innerHTML = inputRange.value;
         })
         
@@ -233,4 +237,27 @@ fetch('./annunci.json')
 
         showCards(data)
     
-})
+        function filterByWord(array) {
+            let filtered = array.filter((annuncio)=> annuncio.name.toLowerCase().includes(wordInput.value.toLowerCase()) );
+            return filtered;
+        };
+        
+        wordInput.addEventListener('input', ()=>{
+            globalFilter(wordInput.value)
+        })
+
+        function  globalFilter() {
+            let filteredByCategory=filterByCategory(data);
+            let filteredByPrice=filterByPrice(filteredByCategory);
+            let filteredByWord= filterByWord(filteredByPrice);
+            showCards(filteredByWord);
+        }
+        globalFilter()
+
+});
+
+
+
+
+
+

@@ -27,10 +27,10 @@ link.forEach((el)=>{
         
     })
 })
-logo.src="http://127.0.0.1:5500/media/logobianco.png"
-imgSfondo.src="http://127.0.0.1:5500/media/img-sfondo-scura.png"
+logo.src="media/logobianco.png"
+imgSfondo.src="media/img-sfondo-scura.png"
 bordo.classList.add('bordon')
-imgNum.src="http://127.0.0.1:5500/media/bwink_tsp_06_single_01.png"
+imgNum.src="media/bwink_tsp_06_single_01.png"
 
 ul.classList.add('bblack')
 
@@ -50,11 +50,11 @@ window.addEventListener(("scroll"), ()=>{
                 el.style.color='#373f51'
             })
         });
-        logo.src="http://127.0.0.1:5500/media/logonero.png";
-        imgSfondo.src="http://127.0.0.1:5500/media/img-sfondo.png"
+        logo.src="media/logonero.png";
+        imgSfondo.src="media/img-sfondo.png"
         bordo.classList.remove('bordon')
         bordo.classList.add('bordov')
-        imgNum.src="http://127.0.0.1:5500/media/bwink_tsp_06_single_02.png"
+        imgNum.src="media/bwink_tsp_06_single_02.png"
         
         
     } else {
@@ -74,11 +74,11 @@ window.addEventListener(("scroll"), ()=>{
                 
             })
         });
-        logo.src="http://127.0.0.1:5500/media/logobianco.png";
-        imgSfondo.src="http://127.0.0.1:5500/media/img-sfondo-scura.png"
+        logo.src="media/logobianco.png";
+        imgSfondo.src="media/img-sfondo-scura.png"
         bordo.classList.remove('bordov')
         bordo.classList.add('bordon')
-        imgNum.src="http://127.0.0.1:5500/media/bwink_tsp_06_single_01.png"
+        imgNum.src="media/bwink_tsp_06_single_01.png"
     }
 })
 
